@@ -1,0 +1,43 @@
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+    
+<div class="card border border-1 border-success" style="width: 30rem;">
+    
+    <div class="card-body">
+        <img src="https://img.odcdn.com.br/wp-content/uploads/2022/10/mega-sena-1.jpg" class="card-img-top"  alt="mega sena">
+
+
+        <div class="row mb-3 mt-4">
+        
+            <label for="numerosSorteados" class="form-label">Números Sorteados:</label>
+            <div class="d-flex justify-content-between mb-3">
+                <input type="number" [(ngModel)]="numerosSorteados[0]" name="numerosSorteados1" class="form-control text-center me-2 border border-1 border-success" min="1" max="60" style="width: 60px;">
+                <input type="number" [(ngModel)]="numerosSorteados[1]" name="numerosSorteados2" class="form-control text-center me-2 border border-1 border-success" min="1" max="60" style="width: 60px;">
+                <input type="number" [(ngModel)]="numerosSorteados[2]" name="numerosSorteados3" class="form-control text-center me-2 border border-1 border-success" min="1" max="60" style="width: 60px;">
+                <input type="number" [(ngModel)]="numerosSorteados[3]" name="numerosSorteados4" class="form-control text-center me-2 border border-1 border-success" min="1" max="60" style="width: 60px;">
+                <input type="number" [(ngModel)]="numerosSorteados[4]" name="numerosSorteados5" class="form-control text-center me-2 border border-1 border-success" min="1" max="60" style="width: 60px;">
+                <input type="number" [(ngModel)]="numerosSorteados[5]" name="numerosSorteados6" class="form-control text-center border border-1 border-success" min="1" max="60" style="width: 60px;">
+            </div>
+                    
+            <label for="numerosEscolhidos" class="form-label">Sua Aposta:</label>
+            <div class="d-flex justify-content-between mb-3">
+                <input type="number" [(ngModel)]="numerosEscolhidos[0]" name="numerosEscolhidos1" class="form-control text-center me-2 border border-1 border-success" min="1" max="60" style="width: 60px;">
+                <input type="number" [(ngModel)]="numerosEscolhidos[1]" name="numerosEscolhidos2" class="form-control text-center me-2 border border-1 border-success" min="1" max="60" style="width: 60px;">
+                <input type="number" [(ngModel)]="numerosEscolhidos[2]" name="numerosEscolhidos3" class="form-control text-center me-2 border border-1 border-success" min="1" max="60" style="width: 60px;">
+                <input type="number" [(ngModel)]="numerosEscolhidos[3]" name="numerosEscolhidos4" class="form-control text-center me-2 border border-1 border-success" min="1" max="60" style="width: 60px;">
+                <input type="number" [(ngModel)]="numerosEscolhidos[4]" name="numerosEscolhidos5" class="form-control text-center me-2 border border-1 border-success" min="1" max="60" style="width: 60px;">
+                <input type="number" [(ngModel)]="numerosEscolhidos[5]" name="numerosEscolhidos6" class="form-control text-center border border-1 border-success" min="1" max="60" style="width: 60px;">
+            </div>
+        </div>
+
+        <!-- Botão de Resultado -->
+        <div class="d-grid gap-2">
+            <button (click)="exibirResultado()" class="btn btn-outline-success">Verificar Resultado</button>
+        </div>
+
+        <!-- Resultado -->
+        <div class="mt-3 text-center">
+            <label class="fw">{{resultado}}</label>
+        </div>
+    </div>
+</div>
+</div>
